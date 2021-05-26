@@ -1,0 +1,6 @@
+C:\Users\theem\source\repos\PeriodosAtras\PeriodosAtras.ConsoleApp\bin\Debug\PeriodosAtras.ConsoleApp.exe.config
+C:\Users\theem\source\repos\PeriodosAtras\PeriodosAtras.ConsoleApp\bin\Debug\PeriodosAtras.ConsoleApp.exe
+C:\Users\theem\source\repos\PeriodosAtras\PeriodosAtras.ConsoleApp\bin\Debug\PeriodosAtras.ConsoleApp.pdb
+C:\Users\theem\source\repos\PeriodosAtras\PeriodosAtras.ConsoleApp\obj\Debug\PeriodosAtras.ConsoleApp.csproj.CoreCompileInputs.cache
+C:\Users\theem\source\repos\PeriodosAtras\PeriodosAtras.ConsoleApp\obj\Debug\PeriodosAtras.ConsoleApp.exe
+C:\Users\theem\source\repos\PeriodosAtras\PeriodosAtras.ConsoleApp\obj\Debug\PeriodosAtras.ConsoleApp.pdb
