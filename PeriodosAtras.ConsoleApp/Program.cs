@@ -10,7 +10,9 @@ namespace PeriodosAtras.ConsoleApp
     {
         static void Main(string[] args)
         {
-
+            Tela tela = new Tela();
+            tela.ReceberEntrada();
+            Console.ReadLine();
         }
     }
 }

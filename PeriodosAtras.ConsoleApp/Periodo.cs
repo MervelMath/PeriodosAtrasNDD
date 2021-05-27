@@ -11,24 +11,20 @@ namespace PeriodosAtras.ConsoleApp
         DateTime dataPassada = new DateTime();
         DateTime dataAtual = DateTime.Now;
         Dominio numero = new Dominio();
-        //   public Periodo(DateTime data)
-        //   {
-        //       this.data = data;
-        //       CalcularPeriodo(data);
-        //   }
 
 
 
         public string CalcularPeriodo(DateTime data)
         {
+            
             dataPassada = data;
             string diff2 = (dataAtual - dataPassada).TotalDays.ToString();
 
-            Console.WriteLine(diff2);
 
             int indiceVirgula = diff2.LastIndexOf(",");
 
             int diff3 = int.Parse(diff2.Substring(0,indiceVirgula));
+
 
             return Calculate(diff3);
         }
@@ -40,7 +36,15 @@ namespace PeriodosAtras.ConsoleApp
             int meses = diff2 / 30;
             int semanas = diff2 / 7;
             int dias = diff2 / 1;
-            
+
+            if (diff2 == 3650)
+                return "Uma década atrás";
+            if (diff2 > 3650 && diff2 < 7300)
+                return "Mais de uma década atrás";
+            if (diff2 >= 7300)
+                return "Décadas atrás";
+
+
             if (diff2 > 0)
             {
                 result = ObterStringPeriodo(diff2, anos, meses, semanas, dias);

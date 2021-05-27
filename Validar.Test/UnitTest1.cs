@@ -8,6 +8,7 @@ namespace Validar.Test
     public class UnitTest1
     {
 
+
         [TestMethod]
         public void ValidarCalculoEntradaPrincipal()
         {
@@ -16,6 +17,40 @@ namespace Validar.Test
             string test = periodo.CalcularPeriodo(data);
 
             Assert.AreEqual("um ano e um dia atrás", test);
+        }
+
+
+        [TestMethod]
+        public void ValidarMaisdeUmaDecada()
+        {
+            DateTime data = new DateTime(2010, 5, 25);
+            Periodo periodo = new Periodo();
+            string test = periodo.CalcularPeriodo(data);
+
+            Assert.AreEqual("Mais de uma década atrás", test);
+        }
+
+
+        [TestMethod]
+        public void ValidarUmaDecada()
+        {
+            DateTime data = new DateTime(2011, 5, 30);
+            Periodo periodo = new Periodo();
+            string test = periodo.CalcularPeriodo(data);
+
+            Assert.AreEqual("Uma década atrás", test);
+        }
+
+
+
+        [TestMethod]
+        public void ValidarDecadas()
+        {
+            DateTime data = new DateTime(1980, 5, 25);
+            Periodo periodo = new Periodo();
+            string test = periodo.CalcularPeriodo(data);
+
+            Assert.AreEqual("Décadas atrás", test);
         }
 
 
